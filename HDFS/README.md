@@ -241,6 +241,11 @@ sudo apt install build-essential
    sudo make install
    ```
 
+5. Add FIO to the PATH:
+   ```bash
+   export PATH=$PATH:/home/baadalvm/fio
+   ```
+
 ---
 
 ### Testing HDFS with FIO
@@ -316,3 +321,9 @@ fio --name=random_read_test \
 - Each job uses its own connection to HDFS.
 
 For more details, refer to the [FIO Documentation](https://fio.readthedocs.io/en/latest/fio_doc.html).
+
+
+## Complete suite of tests used in benchmarking
+```
+cd HDFS/tests
+```

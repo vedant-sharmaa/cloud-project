@@ -164,6 +164,17 @@ make
 sudo make install
 ```
 
+#### Put FIO in PATH
+```
+vim ~/.bashrc
+```
+```
+export PATH=$PATH:/home/baadalvm/fio
+```
+```
+source ~/.bashrc
+```
+
 ### Testing
 The tests we have used are given below.
 
@@ -175,4 +186,9 @@ The tests we have used are given below.
 #### Running all the above tests
 ```
 fio test.fio
+```
+
+### Complete suite of tests used in benchmarking
+```
+cd GlusterFS/tests
 ```

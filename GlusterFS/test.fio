@@ -3,7 +3,7 @@ ioengine=libaio
 direct=1
 size=1G
 directory=/mnt/glusterfs
-bs=4k
+bs=1k
 time_based=1
 runtime=60
 group_reporting

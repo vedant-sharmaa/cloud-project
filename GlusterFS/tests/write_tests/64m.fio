@@ -1,0 +1,12 @@
+[global]
+ioengine=libaio
+direct=1
+bs=4k
+time_based=1
+runtime=60
+group_reporting
+directory=/mnt/glusterfs
+
+[write_test_64mb]
+rw=write
+size=64M

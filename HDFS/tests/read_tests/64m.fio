@@ -1,0 +1,14 @@
+[read_test]
+name=read_test_64mb
+rw=read
+bs=4k
+size=64M
+numjobs=1
+runtime=60
+ioengine=libhdfs
+namenode=10.17.7.99
+hostname=10.17.7.99
+port=9000
+hdfsdirectory=/test/
+chunk_size=64M
+group_reporting

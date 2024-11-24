@@ -1,0 +1,15 @@
+[sequential_write_test_2mb]
+name=sequential_write_test_2mb
+rw=write
+bs=4k
+size=2M
+numjobs=1
+runtime=60
+ioengine=libhdfs
+namenode=10.17.7.99
+hostname=10.17.7.99
+port=9000
+hdfsdirectory=/test/
+chunk_size=2M
+group_reporting
+filename=testfile_2mb.txt
