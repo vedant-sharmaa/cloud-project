@@ -112,7 +112,22 @@ Add the following:
 
 ---
 
-## Starting HDFS (Master Node Only)
+## Master Node Only
+
+### Update workers file 
+Edit `workers` in `/usr/local/hadoop/etc/hadoop`:
+```bash
+vim workers
+```
+Add the following:
+```xml
+master-ip
+worker-1-ip
+worker-2-ip
+worker-3-ip
+```
+
+### Starting HDFS
 1. Format the NameNode:
    ```bash
    hdfs namenode -format
@@ -133,7 +148,7 @@ Add the following:
 
 ---
 
-## Stopping HDFS (Master Node Only)
+### Stopping HDFS
 Stop the HDFS services:
 ```bash
 stop-dfs.sh
