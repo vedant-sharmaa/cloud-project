@@ -267,7 +267,7 @@ fio --name=sequential_write_test \
     --hdfsdirectory=/fio/ \
     --chunk_size=1G \
     --group_reporting \
-    --filename=test.txt
+    --filename=testfile.txt
 ```
 
 #### Sequential Read Test
