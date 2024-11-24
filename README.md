@@ -21,7 +21,23 @@
    ```
 
 ---
-## Run the following commands on all nodes
+
+## Automation script
+Run the below script to run and setup the HDFS
+
+1. Make the `hdfs-setup.sh` script executable
+```bash
+    chmod +x hdfs-setup.sh
+```
+
+2. Run the script
+```bash
+    ./hdfs-setup.sh <master-ip> <worker-1-ip> <worker-2-ip> <worker-3-ip>
+```
+
+(Note: The above are private IPs of the VMs.)
+
+## Or Run the following commands on all nodes (Manual steps)
 
 ### Installing Java
 ```bash
@@ -128,17 +144,22 @@ worker-3-ip
 ```
 
 ### Starting HDFS
-1. Format the NameNode:
+1. Create logs directory:
+    ```bash
+    mkdir -p /usr/local/hadoop/logs
+    ```
+
+2. Format the NameNode:
    ```bash
    hdfs namenode -format
    ```
 
-2. Start the HDFS services:
+3. Start the HDFS services:
    ```bash
    start-dfs.sh
    ```
 
-3. Verify the setup:
+4. Verify the setup:
    ```bash
    hdfs dfs -mkdir /test/
    hdfs dfs -put testfile.txt /test/
