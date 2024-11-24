@@ -1,0 +1,15 @@
+[sequential_write_test_64mb]
+name=sequential_write_test_64mb
+rw=write
+bs=4k
+size=64M
+numjobs=1
+runtime=60
+ioengine=libhdfs
+namenode=10.17.7.99
+hostname=10.17.7.99
+port=9000
+hdfsdirectory=/test/
+chunk_size=64M
+group_reporting
+filename=testfile_64mb.txt

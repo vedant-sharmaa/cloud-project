@@ -1,0 +1,13 @@
+[read_test]
+name=read_test_500kb
+rw=read
+bs=4k
+size=500k
+numjobs=1
+runtime=60
+ioengine=libhdfs
+namenode=10.17.7.99
+hostname=10.17.7.99
+port=9000
+hdfsdirectory=/test/
+group_reporting
