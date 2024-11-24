@@ -21,9 +21,9 @@
    ```
 
 ---
+## Run the following commands on all nodes
 
-## Installing Java
-Run the following commands on all nodes:
+### Installing Java
 ```bash
 sudo apt update
 sudo apt install -y openjdk-8-jdk
@@ -32,7 +32,7 @@ java -version  # Verify Java installation
 
 ---
 
-## Downloading and Installing Hadoop
+### Downloading and Installing Hadoop
 1. Download Hadoop:
    ```bash
    wget https://dlcdn.apache.org/hadoop/common/hadoop-3.4.0/hadoop-3.4.0.tar.gz
@@ -46,7 +46,7 @@ java -version  # Verify Java installation
 
 ---
 
-## Setting Environment Variables
+### Setting Environment Variables
 1. Edit `~/.bashrc`:
    ```bash
    vim ~/.bashrc
@@ -66,13 +66,13 @@ java -version  # Verify Java installation
 
 ---
 
-## Configuring Hadoop
+### Configuring Hadoop
 Navigate to the Hadoop configuration directory:
 ```bash
 cd /usr/local/hadoop/etc/hadoop
 ```
 
-### Update `core-site.xml`:
+#### Update `core-site.xml`:
 Edit `core-site.xml`:
 ```bash
 vim core-site.xml
@@ -87,7 +87,7 @@ Add the following:
 </configuration>
 ```
 
-### Update `hdfs-site.xml`:
+#### Update `hdfs-site.xml`:
 Edit `hdfs-site.xml`:
 ```bash
 vim hdfs-site.xml
@@ -133,7 +133,7 @@ Add the following:
 
 ---
 
-## Stopping HDFS
+## Stopping HDFS (Master Node Only)
 Stop the HDFS services:
 ```bash
 stop-dfs.sh
