@@ -130,11 +130,4 @@ done
 
 mkdir -p /usr/local/hadoop/logs
 
-# Format namenode and start HDFS
-echo "Formatting namenode..."
-hdfs namenode -format
-
-echo "Starting HDFS services..."
-start-dfs.sh
-
 echo "=== HDFS Cluster Setup Complete ==="
