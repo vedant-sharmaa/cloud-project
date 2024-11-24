@@ -73,6 +73,7 @@ sudo apt update
 sudo apt install -y openjdk-8-jdk
 
 # Download Hadoop on master
+cd
 echo "Downloading Hadoop..."
 wget -q ${HADOOP_URL}
 sudo tar -xzf hadoop-${HADOOP_VERSION}.tar.gz -C /usr/local/
